@@ -16,6 +16,7 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 24px;
+        justify-content: space-between;
     }
     &__list {
         font-weight: 500;
@@ -31,13 +32,6 @@
     }
     &__item{
         padding-bottom: 15px;
-
-        &:last-child{
-            padding-bottom: 0;
-        }
-    }
-    &__link{
-        padding-bottom: 43px;
 
         &:last-child{
             padding-bottom: 0;

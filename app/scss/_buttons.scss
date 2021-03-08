@@ -1,4 +1,14 @@
 .button {
     border: none;
     cursor: pointer;
+    text-transform: uppercase;
+    padding: 25px 0;
+
+    &__white {
+        background-color: white;
+    }
+    &__black {
+        background-color: $black;
+        color: white;
+    }
 }

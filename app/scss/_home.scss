@@ -1,0 +1,154 @@
+// Секция "О компании"
+.about {
+    &__company {
+        margin-bottom: 70px;
+    }
+
+    &__container {
+        background-color: $grey;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+
+    &__left {
+        display: grid;
+        grid-template: repeat(2, auto) / repeat(2, 270px);
+        grid-column-gap: 30px;
+        align-items: center;
+        justify-items: start;
+        padding: 30px 0 0 100px;
+
+        &-img {
+            &-big {
+                grid-row-start: span 2;
+
+            }
+
+            &-little {
+                position: relative;
+                top: 30px;
+            }
+        }
+    }
+
+    &__right {
+        padding: 30px 70px 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &-title {
+            font-weight: 300;
+            font-size: 64px;
+            line-height: 64px;
+            color: $greys;
+        }
+
+        &-text {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 25px;
+            color: #000000;
+        }
+    }
+}
+
+// Секция "Основные задачи"
+.task {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__number {
+        font-weight: 900;
+        font-size: 200px;
+        line-height: 239px;
+        display: flex;
+        align-items: center;
+        color: #F2F2F2;
+        padding-right: 30px;
+    }
+
+    &__text {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 36px;
+        color: #333333;
+    }
+
+    &__left {
+        padding-right: 170px;
+    }
+}
+
+.tasks {
+    display: flex;
+    align-items: center;
+}
+
+// Галерея проектов
+.gallary {
+    &__img {
+        padding-right: 30px;
+
+        &:nth-child(2) {
+            padding-right: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        // &:hover {
+
+        // }
+    }
+}
+
+.button__left {
+    display: flex;
+    justify-content: flex-end;
+}
+
+// Форма
+.form {
+    &__container {
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-gap: 30px;
+    }
+
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__field {
+        margin-bottom: 10px;
+        padding: 15px 0 15px 20px;
+        background: #F3F3F3;
+        border: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.04em;
+        color: #8D8D8D;
+    }
+    &__politics {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.03em;
+        color: #333333;
+    }
+}
+
+.area {
+    resize: none;
+    padding: 15px 20px;
+    height: 110px;
+}
