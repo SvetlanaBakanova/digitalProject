@@ -7,6 +7,7 @@
     <title>Главная станица Digital progect</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="header">
@@ -25,6 +26,40 @@
             </div>
         </div>
     </header>
+
+<main class="hero">
+    <div class="container header-hero">
+        <div class="wrapper">
+            <div class="swiper-left">
+                <h1>Phjvfjhv jhvhjvjv</h1>
+                <div class="swipper__buttons">
+                    <button class="swiper-button-prev"></button>
+                    <button class="swiper-button-next"> </button>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="swiper-container image-slider">
+                <div class="image-slider__wrapper swiper-wrapper">
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="img/img-1.jpg" alt="project" class="slider__img">
+                        </div>
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="img/form-pic.jpg" alt="project" class="slider__img">
+                        </div>
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="img/form-pic.jpg" alt="project" class="slider__img">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">Jnghfdbnm</button>
+            </div>
+        </div>
+</main>
 
 <section class="about__company">
     <div class="container about__container">
@@ -83,9 +118,12 @@
         <div class="form__container">
             <div class="form__left">
                 <form class="form__inputs" action="mail.php" method="POST">
-                    <input class="form__field" type="text" name="user-name" placeholder="Имя" required data-validate-field="name">
-                    <input class="form__field" type="tel" name="user-tel" placeholder="Номер телефона" required data-validate-field="phone">
-                    <input class="form__field" type="email" name="user-email" placeholder="E-mail" required data-validate-field="email" >
+                    <input class="form__field" type="text" name="user-name" placeholder="Имя" required
+                        data-validate-field="name">
+                    <input class="form__field" type="tel" name="user-tel" placeholder="Номер телефона" required
+                        data-validate-field="phone">
+                    <input class="form__field" type="email" name="user-email" placeholder="E-mail" required
+                        data-validate-field="email">
                     <input class="form__field" type="text" placeholder="Интересующий товар/услуга">
                     <textarea class="form__field area" placeholder="Сообщение" name="message"></textarea>
                 </form>
@@ -136,9 +174,9 @@
         </div>
     </div>
 </footer>
-
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/inputmask.min.js"></script>
-<script src="js/common.js"></script>
+<script src="js/draft/swiper.js"></script>
 </body>
 
 </html>

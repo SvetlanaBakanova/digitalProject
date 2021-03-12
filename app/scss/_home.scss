@@ -1,3 +1,81 @@
+// Слайдер
+// html,
+// body {
+//     position: relative;
+//     height: 100%;
+// }
+
+// img {
+//     width: 100%;
+// }
+
+// body {
+//     background: #eee;
+//     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+//     font-size: 25px;
+//     color: #000;
+//     margin: 0;
+//     padding: 0;
+// }
+
+.wrapper {
+    min-width: 0;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.swiper-container {
+    height: 100%;
+    background: #fff;
+    display: flex;
+
+}
+
+.swiper-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    padding: 20px;
+    position: static !important;
+    display: inline-flex !important;
+
+}
+
+.swiper-pagination {
+    position: static !important;
+    text-align: start;
+    font-size: 36px;
+
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #000
+}
+
+.btn {
+    position: absolute;
+    bottom: 0;
+    font-size: 24px;
+    z-index: 1;
+}
 // Секция "О компании"
 .about {
     &__company {
