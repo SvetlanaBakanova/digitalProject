@@ -1,0 +1,105 @@
+.swiper {
+    display: flex;
+    margin-bottom: 60px ;
+
+    &-container {
+        width: 770px;
+        height: 830px;
+        margin: 0;
+    }
+
+    &-button-next::after,
+    &-button-prev::after {
+        display: none;
+    }
+    &-tittle {
+        font-weight: 300;
+        font-size: 64px;
+        line-height: 64px;
+        color: #BDBDBD;
+        text-transform: uppercase;
+        display: contents;
+
+        &_big {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 64px;
+            color: #333333;
+            padding-bottom: 90px;
+        }
+
+    }
+
+
+    &-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 72px;
+
+    }
+    &-buttons-all {
+        display: flex;
+        padding-bottom: 90px;
+    }
+    &-button {
+        
+
+        &-prev {
+        background-image: url("../img/rectengle-left.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 53px;
+        height: 53px;
+        border: 1px solid #F2F2F2;
+        background-color: #FFFFFF;
+        position: static;
+        }
+
+        &-next {
+            background-image: url("../img/rectengle-right-black.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 53px;
+            height: 53px;
+            border: 1px solid #F2F2F2;
+            background-color: #FFFFFF;
+            position: static;
+        }
+
+        &-disabled {
+            background-color: #F9F9F9;
+            border: 1px solid #F2F2F2;
+        }
+    }
+}
+
+
+
+.swiper-pagination-current::after {
+    content: "";
+    margin-right: 25px;
+}
+
+.swiper-pagination-current::before,
+.swiper-pagination-total::before {
+    content: "0";
+}
+
+.swiper-pagination-total::before {
+    margin-left: 25px;
+}
+
+.swiper-pagination {
+    color: #BDBDBD;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    position: static;
+    
+    &-fraction {
+        text-align: left;
+    }
+}
+
+

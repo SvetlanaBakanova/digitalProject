@@ -2,13 +2,22 @@
     border: none;
     cursor: pointer;
     text-transform: uppercase;
-    padding: 25px 0;
+    padding: 30px 50px;
 
     &__white {
         background-color: white;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.2em;
     }
     &__black {
         background-color: $black;
         color: white;
+    }
+    &-swiper {
+        position: relative;
+        z-index: 1;
+        bottom: 76px;
     }
 }
