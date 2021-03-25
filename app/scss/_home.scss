@@ -116,6 +116,7 @@
         transition: all 0.2s linear;
         text-align: center;
 
+
     }
     
     &-img-tittle {
@@ -130,6 +131,7 @@
         position: relative;
         margin-bottom: 30px;
         cursor: pointer;
+        display: inline-block;
 
         &:hover .gallary-img-info {
             opacity: 0.8;

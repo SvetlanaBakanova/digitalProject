@@ -9,4 +9,15 @@ document.addEventListener("DOMContentLoaded", function () {
             type: 'fraction'
         }
     })
+
+    let swiper = new Swiper('.projects-pics-container', {
+        pagination: {
+            el: '.projects-pagination',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.projects-button-next',
+            prevEl: '.projects-button-prev',
+        },
+    });
 })
