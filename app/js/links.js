@@ -1,0 +1,1 @@
+"use strict";let currentLocation=location.href;let menuItem=document.querySelectorAll('ul.menu__list a');let menuLength=menuItem.length;for(let a=0;a<menuLength;a++){if(menuItem[a].href===currentLocation){menuItem[a].className="active";}}

@@ -20,4 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
             prevEl: '.projects-button-prev',
         },
     });
+
+    new Swiper('.project-swiper', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction'
+        }
+    })
 })

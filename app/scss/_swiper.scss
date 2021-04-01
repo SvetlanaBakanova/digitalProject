@@ -2,12 +2,6 @@
     display: flex;
     margin-bottom: 60px ;
 
-    &-container {
-        width: 770px;
-        height: 830px;
-        margin: 0;
-    }
-
     &-button-next::after,
     &-button-prev::after {
         display: none;
@@ -25,7 +19,6 @@
             font-size: 64px;
             line-height: 64px;
             color: #333333;
-            padding-bottom: 90px;
         }
 
     }
@@ -40,7 +33,7 @@
     }
     &-buttons-all {
         display: flex;
-        padding-bottom: 90px;
+        margin-bottom: 90px;
     }
     &-button {
         
@@ -54,6 +47,7 @@
         border: 1px solid #F2F2F2;
         background-color: #FFFFFF;
         position: static;
+        margin-right: 20px;
         }
 
         &-next {
