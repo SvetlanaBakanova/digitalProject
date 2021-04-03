@@ -1,23 +1,14 @@
-.button {
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    padding: 30px 50px;
+.button{
 
-    &__white {
-        background-color: white;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 12px;
-        letter-spacing: 0.2em;
-    }
-    &__black {
-        background-color: $black;
-        color: white;
-    }
-    &-swiper {
-        position: relative;
-        z-index: 1;
-        bottom: 76px;
+    &-white{
+        // padding: 30px 50px;
+        width: 222px;
+        height: 71px;
+        background-color: #FFFFFF;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
     }
 }

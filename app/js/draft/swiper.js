@@ -31,4 +31,18 @@ document.addEventListener("DOMContentLoaded", function () {
             type: 'fraction'
         }
     })
+
+
+
+    new Swiper('.cerificates-swiper', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction'
+        }
+    })
+    
 })
