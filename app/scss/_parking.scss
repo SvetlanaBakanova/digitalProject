@@ -1,0 +1,25 @@
+.parking {
+    &-section {
+        border-top: 1px solid #F2F2F2;
+    }
+    &-block {
+        display: flex;
+    }
+    &-img {
+        &-little{
+            padding-right: 30px;
+        }
+        &-big {
+            margin: 30px 0;
+            width: 100%;
+        }
+
+    }
+    &-text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+    }
+
+}
