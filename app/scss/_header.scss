@@ -33,12 +33,20 @@
 
     &__container {
         display: grid;
-        grid-template-columns: 27% 73%;
+        grid-template-columns: 22% 73%;
     }
+}
+.logo__link {
+    width: 70px;
+    height: 40px;
 }
 
 .menu {
     margin: auto;
+
+    @media (max-width: 886px) {
+        display: none;
+    }
 
     &__list {
         display: flex;
@@ -63,4 +71,13 @@
 }
 .active {
     color: hotpink;
+}
+.hamburger {
+    display: none;
+
+    @media (max-width: 886px) {
+        display: block;
+        justify-self: flex-end;
+        margin-right: 30px;
+    }
 }

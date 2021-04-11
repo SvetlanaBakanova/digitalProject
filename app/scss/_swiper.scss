@@ -1,24 +1,49 @@
 .swiper {
     display: flex;
-    margin-bottom: 60px ;
+    margin-bottom: 90px;
+
+    @media (max-width: 678px) {
+        display: block;
+    }
 
     &-button-next::after,
     &-button-prev::after {
         display: none;
     }
     &-tittle {
-        font-weight: 300;
-        font-size: 64px;
-        line-height: 64px;
-        color: #BDBDBD;
-        text-transform: uppercase;
-        display: contents;
-
         &_big {
             font-weight: 700;
             font-size: 64px;
             line-height: 64px;
             color: #333333;
+            text-transform: uppercase;
+
+            @media (max-width: 886px) {
+                font-size: 56px;
+                line-height: 56px;
+            }
+
+            @media (max-width: 830px) {
+                font-size: 42px;
+                line-height: 42px;
+            }
+        }
+        &_min {
+            font-weight: 300;
+            font-size: 64px;
+            line-height: 64px;
+            color: #BDBDBD;
+            text-transform: uppercase;
+
+            @media (max-width: 886px) {
+               font-size: 56px;
+               line-height: 56px;
+            }
+
+            @media (max-width: 830px) {
+                font-size: 42px;
+                line-height: 42px;
+            }
         }
 
     }
@@ -31,13 +56,23 @@
         margin-right: 72px;
 
     }
-    &-buttons-all {
-        display: flex;
-        margin-bottom: 90px;
+    &-buttons {
+        padding-top: 90px;
+
+        @media (max-width: 678px) {
+            padding-top: 32px;
+            display: flex;
+            align-items: center;
+        }
+        @media (max-width: 770px) {
+            padding-top: 50px;
+        }
+        &-all {
+            display: flex;
+        }
     }
     &-button {
         
-
         &-prev {
         background-image: url("../img/rectengle-left.svg");
         background-repeat: no-repeat;
@@ -48,6 +83,12 @@
         background-color: #FFFFFF;
         position: static;
         margin-right: 20px;
+
+            @media (max-width: 830px) {
+                width: 42px;
+                height: 42px;
+            }
+
         }
 
         &-next {
@@ -59,12 +100,27 @@
             border: 1px solid #F2F2F2;
             background-color: #FFFFFF;
             position: static;
+
+            @media (max-width: 830px) {
+                width: 42px;
+                height: 42px;
+            }
         }
 
         &-disabled {
             background-color: #F9F9F9;
             border: 1px solid #F2F2F2;
+
+            @media (max-width: 830px) {
+                width: 42px;
+                height: 42px;
+            }
         }
+    }
+    &-butt {
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 }
 
@@ -90,10 +146,34 @@
     font-size: 24px;
     line-height: 24px;
     position: static;
+    padding-top: 90px;
+
+    @media (max-width: 770px) {
+        padding-top: 50px;
+    }
+    
     
     &-fraction {
         text-align: left;
+
+        @media (max-width: 830px) {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        @media (max-width: 678px) {
+            padding: 0 0 18px 30px;
+        }
     }
+}
+.rectengle {
+    height: 8px;
+    width: 18px;
+    margin-left: 15px;
+}
+.slider-slide {
+    width: 770px;
+    height: 830px;
+    position: relative;
 }
 
 

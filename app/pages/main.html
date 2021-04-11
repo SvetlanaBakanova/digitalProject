@@ -17,7 +17,7 @@
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
                 took a galley of type and scrambled it to make a type specimen book. It has survived not only five
                 centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            <a class="button-white" href="#">Читать <img src="img/rectengle-right-black.svg" alt="b"></a>
+            <a class="button-white" href="#">Читать <img class="rectengle" src="img/rectengle-right-black.svg" alt="b"></a>
         </div>
     </div>
 </section>
@@ -79,33 +79,40 @@
             </div>
         </div>
         <div class="button__left">
-            <a class="button-black" href="second.html">Все проекты <img src="img/rectengle-right-black.svg" alt="b"></a>
+            <a class="button-black" href="#">Все проекты <img src="img/rectengle-right.svg" alt="b"></a>
         </div>
     </div>
 </section>
 <section class="form__contact">
-    <div class="container ">
+    <div class="container">
         <h2 class="about__right-title">Связаться с нами</h2>
         <div class="form__container">
             <div class="form__left">
-                <form class="form__inputs" action="mail.php" method="POST">
-                    <input class="form__field" type="text" name="user-name" placeholder="Имя" required
-                        data-validate-field="name">
-                    <input class="form__field" type="tel" name="user-tel" placeholder="Номер телефона" required
-                        data-validate-field="phone">
-                    <input class="form__field" type="email" name="user-email" placeholder="E-mail" required
-                        data-validate-field="email">
-                    <input class="form__field" type="text" placeholder="Интересующий товар/услуга">
-                    <textarea class="form__field area" placeholder="Сообщение" name="message"></textarea>
-                </form>
+                <form id="form" class="form__inputs js-form" action="#" method="POST">
+            <input class="form__field" type="text" name="name" placeholder="Имя">
+
+            <input class="form__field" type="tel" name="tel" placeholder="Номер телефона" data-validate-field="tel">
+
+            <input class="form__field" type="email" name="email" placeholder="E-mail" data-validate-field="email">
+
+            <input class="form__field" type="text" placeholder="Интересующий товар/услуга">
+
+            <textarea class="form__field area" placeholder="Сообщение" name="text" type="text" data-validate-field="text"></textarea>
+            <div class="checkbox-container">
+                <label class="check block">
+                    <input class="check__input" type="checkbox" checked data-validate-field="checkbox">
+                    <span class="checkbox"></span>
+                    <p class="politics">
+                        Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+                    </p>
+                </label>
+            </div>
+            <button type="submit" class="button button-black">Отправить<img src="img/rectengle-right-black.svg"
+                    alt="ractangle"></button>
+        </form>
             </div>
             <div class="form__right">
                 <img src="img/form-pic.jpg" alt="form pic">
-            </div>
-            <div class="">
-                <p class="form__politics">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
-                <button type="submit" class="button button__black">Отправить<img src="img/rectengle-right.svg"
-                        alt="ractangle"></button>
             </div>
         </div>
     </div>

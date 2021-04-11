@@ -1,7 +1,6 @@
 .footer {
     background-color: $black;
     padding-top: 60px;
-    padding-bottom: 50px;
     margin-top: 120px;
 
     &__container {
@@ -65,7 +64,10 @@
         font-size: 12px;
         line-height: 22px;
         color: rgba(200, 200, 200, 0.5);
-
+        margin-top: 30px;
+    }
+    &-politics {
+        margin: 24px 0;
     }
 
 }
