@@ -169,6 +169,10 @@
     height: 8px;
     width: 18px;
     margin-left: 15px;
+
+    @media (max-width: 992px) {
+        margin-left: 5px;
+    }
 }
 .slider-slide {
     width: 770px;

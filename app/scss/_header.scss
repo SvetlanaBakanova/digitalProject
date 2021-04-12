@@ -34,6 +34,10 @@
     &__container {
         display: grid;
         grid-template-columns: 22% 73%;
+
+        @media (max-width: 708px) {
+            grid-template-columns: 16% 73%;
+        }
     }
 }
 .logo__link {
@@ -44,7 +48,7 @@
 .menu {
     margin: auto;
 
-    @media (max-width: 886px) {
+    @media (max-width: 574px) {
         display: none;
     }
 
@@ -57,27 +61,27 @@
     &__item {
         text-transform: uppercase;
         display: flex;
-        margin-right: 60px;
+        margin-left: 60px;
         font-weight: 400;
         font-size: 12px;
         line-height: 12px;
         letter-spacing: 0.2em;
 
-
-        &:last-child {
-            margin-right: 0;
+        @media (max-width: 960px) {
+            margin-left: 20px;
+        }
+        @media (max-width: 782px) {
+            font-size: 10px;
         }
     }
 }
 .active {
     color: hotpink;
 }
-.hamburger {
-    display: none;
 
-    @media (max-width: 886px) {
-        display: block;
-        justify-self: flex-end;
-        margin-right: 30px;
+.mobile {
+    &-menu__list {
+        display: none;
     }
+
 }

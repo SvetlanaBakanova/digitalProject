@@ -44,5 +44,15 @@
         font-size: 12px;
         line-height: 12px;
         letter-spacing: 0.2em;
+
+         @media (max-width: 992px) {
+             width: 173px;
+             height: 58px;
+         }
+
+         @media (max-width: 768px) {
+             width: 173px;
+             height: 40px;
+         }
     }
 }

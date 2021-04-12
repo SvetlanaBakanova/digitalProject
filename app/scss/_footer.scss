@@ -2,13 +2,41 @@
     background-color: $black;
     padding-top: 60px;
     margin-top: 120px;
+    
+    @media (max-width: 1000px) {
+        margin-top: 50px;
+    }
+
 
     &__container {
         color: white;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 20px;
-        
+
+        @media (max-width: 970px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 573px) {
+            grid-template-columns: 1fr;
+            padding: 0 30px;
+        }
+    }
+    &__logo {
+        display: inherit;
+
+        &-link {
+            width: 145px;
+            height: 94px;
+
+            @media (max-width: 970px) {
+                margin: auto;
+            }
+            @media (max-width: 573px) {
+                margin: 0;
+                padding-bottom: 20px;
+            }
+        }
     }
     &__contacts-links {
         display: flex;
@@ -17,6 +45,19 @@
         font-size: 14px;
         line-height: 24px;
         justify-content: space-between;
+
+        @media (max-width: 573px) {
+            padding-top: 20px;
+            padding-right: 55px;
+        }
+    }
+    &__info-links {
+        @media (max-width: 970px) {
+             margin: auto;
+        }
+        @media (max-width: 573px) {
+            margin: 0;
+        }
     }
     &__list {
         font-weight: 500;
@@ -31,14 +72,16 @@
         padding-bottom: 25px;
     }
     &__item{
-        padding-bottom: 15px;
+        padding-bottom: 16px;
 
         &:last-child{
             padding-bottom: 0;
         }
     }
     &__icon {
-        padding-right: 15px;
+        width: 16px;
+        height: 16px;
+        padding-right: 13px;
     }
 
     &__social {
@@ -46,8 +89,26 @@
         font-size: 14px;
         line-height: 24px;
 
+        &-links {
+            @media (max-width: 970px) {
+                margin: auto;
+            }
+            @media (max-width: 573px) {
+                margin: 0;
+                padding-top: 20px;
+            }
+        }
+
+        &-icon {
+            width: 20px;
+            height: 20px;
+            display: block;
+            
+        }
+
         &-link {
             padding-right: 40px;
+            display: inherit;
         
             &:last-child{
                 padding-right: 0;
@@ -70,4 +131,7 @@
         margin: 24px 0;
     }
 
+}
+.social {
+    display: flex;
 }
