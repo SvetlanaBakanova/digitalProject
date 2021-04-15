@@ -8,6 +8,13 @@
         background-color: $grey;
         margin-top: 60px;
 
+        @media (max-width: 1120px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 890px) {
+            grid-template-columns: 1fr;
+        }
+
         &:first-child {
             margin-top: 30px;
         }
@@ -26,6 +33,15 @@
         font-size: 16px;
         line-height: 25px;
         color: #000000;
+
+    }
+    &-right-side  {
+        @media (max-width: 890px) {
+            padding: 0 30px;
+            a {
+            margin: 30px 0;
+            }            
+        }
 
     }
 }

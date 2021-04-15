@@ -3,12 +3,12 @@
         border-top: 1px solid #F2F2F2;
     }
     &-block {
-        display: flex;
+        display: grid;
+        grid-template-columns: 420px 1fr;
+        gap: 30px;
     }
     &-img {
-        &-little{
-            padding-right: 30px;
-        }
+        
         &-big {
             margin: 30px 0;
             width: 100%;

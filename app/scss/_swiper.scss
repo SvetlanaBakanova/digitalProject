@@ -150,7 +150,7 @@
 
     @media (max-width: 770px) {
         padding-top: 50px;
-    }
+    } 
     
     
     &-fraction {
@@ -173,6 +173,9 @@
     @media (max-width: 992px) {
         margin-left: 5px;
     }
+}
+.projects-pagination {
+    padding: 0;
 }
 .slider-slide {
     width: 770px;
