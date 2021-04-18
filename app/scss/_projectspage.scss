@@ -27,20 +27,31 @@
         font-size: 40px;
         line-height: 50px;
         color: #BDBDBD;
+
+        @media (max-width: 440px) {
+            font-size: 32px;
+        }
     }
     &-text {
         font-weight: 300;
         font-size: 16px;
         line-height: 25px;
         color: #000000;
-
+        width: 100%;
+        @media (max-width: 440px) {
+            font-size: 14px;
+        }
     }
+
     &-right-side  {
         @media (max-width: 890px) {
             padding: 0 30px;
             a {
             margin: 30px 0;
             }            
+        }
+        @media (max-width: 440px) {
+            padding: 0 50px 0 10px;
         }
 
     }

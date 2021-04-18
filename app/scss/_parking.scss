@@ -6,6 +6,10 @@
         display: grid;
         grid-template-columns: 420px 1fr;
         gap: 30px;
+
+        @media (max-width: 1090px) {
+            grid-template-columns: 1fr;
+        }
     }
     &-img {
         
@@ -20,6 +24,10 @@
         font-size: 16px;
         line-height: 25px;
         color: #000000;
+
+        @media (max-width: 647px) {
+            font-size: 14px;
+        }
     }
 
 }

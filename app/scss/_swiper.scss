@@ -27,6 +27,9 @@
                 font-size: 42px;
                 line-height: 42px;
             }
+            @media (max-width: 392px) {
+                font-size: 32px;
+            }
         }
         &_min {
             font-weight: 300;
@@ -43,6 +46,9 @@
             @media (max-width: 830px) {
                 font-size: 42px;
                 line-height: 42px;
+            }
+            @media (max-width: 392px) {
+                font-size: 32px;
             }
         }
 
