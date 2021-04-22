@@ -16,6 +16,10 @@
         line-height: 12px;
         letter-spacing: 0.2em;
         
+        &:hover {
+            background-color:whitesmoke;
+            transition: 0.5s ease-in-out;
+        }
         @media (max-width: 992px) {
             width: 173px;
             height: 58px;
@@ -24,10 +28,7 @@
             width: 138px;
             height: 40px;
         }
-        // @media (max-width: 992px) {
-        //     font-size: 18px;
-        //     line-height: 18px;
-        // }
+
     }
     &-black {
         background-color: $blac;
@@ -45,6 +46,10 @@
         line-height: 12px;
         letter-spacing: 0.2em;
 
+        &:hover {
+            background-color: rgb(83, 83, 83);
+            transition: 0.5s ease-in-out;
+        } 
          @media (max-width: 992px) {
              width: 173px;
              height: 58px;

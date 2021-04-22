@@ -1,3 +1,4 @@
+let modal = document.querySelector(".lightbox");
 var selector = document.querySelectorAll("input[type='tel']");
 
 var im = new Inputmask("+38099-999-99-99");
@@ -42,7 +43,7 @@ new JustValidate('.js-form', {
     submitHandler: function (form) {
         let xhr = new XMLHttpRequest();
 
-        xhr.open("POST", "mail.php", true);
+        xhr.open("POST", "php/mail.php", true);
 
         let formData = new FormData(form);
 
@@ -50,6 +51,10 @@ new JustValidate('.js-form', {
             if(xhr.readyState === 4) {
                 switch (xhr.status) {
                     case 200:
+                    modal.classList.add("is-open");
+                    setTimeout(() => {
+                      modal.classList.remove("is-open");
+                    }, 5000);
                         console.log("форма отправлена");
                         form.reset();
                         break;
