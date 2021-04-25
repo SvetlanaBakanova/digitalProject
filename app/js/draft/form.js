@@ -1,4 +1,5 @@
-let modal = document.querySelector(".lightbox");
+let modal = document.querySelector(".finished__send");
+let forma = document.querySelector(".modal");
 var selector = document.querySelectorAll("input[type='tel']");
 
 var im = new Inputmask("+38099-999-99-99");
@@ -52,9 +53,8 @@ new JustValidate('.js-form', {
                 switch (xhr.status) {
                     case 200:
                     modal.classList.add("is-open");
-                    setTimeout(() => {
-                      modal.classList.remove("is-open");
-                    }, 5000);
+                    modal.classList.remove("finished__send");
+                    forma.classList.add("is-close");
                         console.log("форма отправлена");
                         form.reset();
                         break;

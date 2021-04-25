@@ -4,17 +4,59 @@
 
 <div class="container contacts-container">
     <div class="contacts-block">
-        <h1 class="swiper-tittle"> <span class="swiper-tittle_min">контактная</span>  <span class="swiper-tittle_big">информация</span></h1>
-        <p class="contacts-link-title">«Digital Project»  <br> <span class="contacts-link-adress">г. Караганда, ул. Телевизионная 10</span></p>
+        <h1 class="swiper-tittle"> <span class="swiper-tittle_min">контактная</span> <span
+                class="swiper-tittle_big">информация</span></h1>
+        <p class="contacts-link-title">«Digital Project» <br> <span class="contacts-link-adress">г. Караганда, ул.
+                Телевизионная 10</span></p>
         <a class="contacts-link-tel" href="tel:+77017776811">+7 (701) 77 76 811</a>
         <a class="contacts-link-email" href="mailto:Galym.sultanov@mail.ru">Galym.sultanov@mail.ru</a>
-        <button type="submit" class="button-black">Орабтная связь</button>
+        <a data-fancybox data-src="#hidden-content" href="javascript:;" class="button button-black">
+            Орабтная связь</a>
     </div>
     <div class="contacts-map">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.654292897332!2d36.31759551539238!3d49.96158717941087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270a51d223c715%3A0xb15980992d656ea!2z0JrQuNC10LI!5e0!3m2!1sru!2sua!4v1617733315056!5m2!1sru!2sua"
-            style="border:0;" allowfullscreen="" loading="lazy">
+            style="border:0;" loading="lazy">
         </iframe>
+    </div>
+</div>
+<div style="display: none;" id="hidden-content">
+    <div class="modal">
+        <div class="modal__form__container">
+            <h2 class="about__right-title">Задать вопрос</h2>
+            <div class="madal__form__left">
+                <form id="form" class="form__inputs js-form" action="mail.php" method="POST">
+                    <input class="form__field" type="text" name="name" placeholder="Имя">
+
+                    <input class="form__field" type="tel" name="tel" placeholder="Номер телефона"
+                        data-validate-field="tel">
+
+                    <input class="form__field" type="email" name="email" placeholder="E-mail"
+                        data-validate-field="email">
+
+                    <input class="form__field" type="text" placeholder="Интересующий товар/услуга">
+
+                    <textarea class="form__field area" placeholder="Сообщение" name="text" type="text"
+                        data-validate-field="text"></textarea>
+                    <div class="checkbox-container">
+                        <label class="check block">
+                            <input class="check__input" type="checkbox" checked data-validate-field="checkbox">
+                            <span class="checkbox"></span>
+                            <p class="politics">
+                                Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+                            </p>
+                        </label>
+                    </div>
+                    <button type="submit" class="button button-black-form">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="finished__send">
+        <img class="finished__send-img" src="img/form.svg" alt="ok">
+        <h3>Спасибо !</h3>
+        <p>Ваше сообщение отправлено мы свяжемся с вами в ближайшее время</p>
+        <button href="contacts.html" type="submit" class="button button-black-form">Вернутся назад</button>
     </div>
 </div>
 
