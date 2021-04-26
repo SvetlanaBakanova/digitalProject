@@ -42,6 +42,18 @@ document.addEventListener("DOMContentLoaded", function () {
         pagination: {
             el: '.swiper-pagination',
             type: 'fraction'
+        },
+        slidesPerView: 3,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            640: {
+                slidesPerView: 3,
+            }
         }
     })
     

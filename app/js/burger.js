@@ -1,0 +1,1 @@
+"use strict";document.addEventListener("DOMContentLoaded",function(){const a=document.querySelector('.hamburger');const b=document.querySelector('.mobile-menu');const c=function(){a.classList.toggle("is-active");b.classList.toggle("mobile-menu--active");document.body.classList.toggle("no-scroll");};a.addEventListener("click",c);});
